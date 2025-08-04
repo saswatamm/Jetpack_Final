@@ -1,7 +1,9 @@
 package app.jetpack.jetpackfinal.utils
 
 import android.annotation.SuppressLint
+import android.os.Build
 import android.util.Log
+import androidx.annotation.RequiresApi
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.AnimationVector2D
 import androidx.compose.animation.core.FiniteAnimationSpec
@@ -36,13 +38,21 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
 import app.jetpack.jetpackfinal.ui.home.data.model.SpotlightData
+import app.jetpack.jetpackfinal.ui.home.ui.screen.CardContent
+import app.jetpack.jetpackfinal.ui.home.ui.viewmodel.HomeViewModel
+import app.jetpack.jetpackfinal.ui.theme.backgroundLightColor
+import app.jetpack.jetpackfinal.utils.Constants.TOP_CARD_INDEX
+import app.jetpack.jetpackfinal.utils.Constants.TOP_Z_INDEX
+import app.jetpack.jetpackfinal.utils.Constants.paddingOffset
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
+import kotlin.collections.getOrNull
 import kotlin.math.abs
 import kotlin.math.min
 import kotlin.math.roundToInt
 import kotlin.unaryMinus
 
+@RequiresApi(Build.VERSION_CODES.Q)
 @Composable
 fun SwipeableCard(
     spotlightList: List<SpotlightData>,

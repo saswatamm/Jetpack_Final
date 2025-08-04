@@ -3,6 +3,11 @@ package app.jetpack.jetpackfinal.ui.home.ui.viewmodel
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import app.jetpack.jetpackfinal.ui.home.data.model.RecommendationData
+import app.jetpack.jetpackfinal.ui.home.data.model.SpotlightData
+import app.jetpack.jetpackfinal.ui.home.data.repository.RecommendationRepository
+import app.jetpack.jetpackfinal.ui.home.data.repository.SpotlightDataHolder
+import app.jetpack.jetpackfinal.ui.home.data.repository.SpotlightRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineScope
