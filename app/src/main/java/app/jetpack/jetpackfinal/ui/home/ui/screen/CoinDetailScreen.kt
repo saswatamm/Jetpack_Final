@@ -856,6 +856,7 @@ fun NewsArticleWithLinks(coinData : SpotlightData) {
     )
 }
 
+@RequiresApi(Build.VERSION_CODES.Q)
 @Composable
 fun ClickableNewsText(
     text: String,
