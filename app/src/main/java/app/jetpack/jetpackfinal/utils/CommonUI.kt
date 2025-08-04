@@ -476,3 +476,11 @@ fun BottomNavBarPreview(){
     val navController = rememberNavController()
     BottomNavigationWithFloatingButtons(navController,true)
 }
+@Composable
+fun BulletPoint() {
+    Box(
+        modifier = Modifier
+            .size(4.dp) // Set the size of the circle
+            .background(color = Color(0xFF8E8E93), shape = CircleShape) // Circle shape with white background
+    )
+}
