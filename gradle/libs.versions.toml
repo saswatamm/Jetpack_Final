@@ -19,6 +19,7 @@ firebaseDatabase = "21.0.0"
 firebaseAuth = "23.1.0"
 constraintlayoutComposeAndroid = "1.1.0"
 composeMaterial = "1.4.0"
+roomCompiler = "2.7.2"
 
 
 [libraries]
@@ -46,6 +47,7 @@ androidx-datastore-preferences-core-jvm = { group = "androidx.datastore", name =
 firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
 androidx-constraintlayout-compose-android = { group = "androidx.constraintlayout", name = "constraintlayout-compose-android", version.ref = "constraintlayoutComposeAndroid" }
 androidx-compose-material = { group = "androidx.wear.compose", name = "compose-material", version.ref = "composeMaterial" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomCompiler" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

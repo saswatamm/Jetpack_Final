@@ -1,5 +1,6 @@
 package app.jetpack.jetpackfinal.ui.home.data.model
 
+import app.jetpack.jetpackfinal.utils.HighlightedValue
 import com.google.firebase.database.PropertyName
 import com.google.gson.annotations.SerializedName
 

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Jetpack Final</string>
+    <string name="google_api_key">@string/google_api_key_actual</string>
 </resources>
